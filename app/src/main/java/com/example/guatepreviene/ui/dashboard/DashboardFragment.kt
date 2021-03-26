@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.guatepreviene.R
 
+
 class DashboardFragment : Fragment() {
 
-    private lateinit var mapViewModel: MapViewModel
+    private lateinit var dashboardViewModel: DashboardViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        mapViewModel =
-                ViewModelProvider(this).get(MapViewModel::class.java)
+        dashboardViewModel = ViewModelProvider(this).get(DashboardViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_dashboard, container, false)
         val textView: TextView = root.findViewById(R.id.text_dashboard)
-        mapViewModel.text.observe(viewLifecycleOwner, Observer {
+        dashboardViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

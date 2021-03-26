@@ -9,7 +9,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.guatepreviene.R
-import com.example.guatepreviene.ui.dashboard.MapViewModel
 
 class MapFragment : Fragment() {
 
@@ -22,8 +21,8 @@ class MapFragment : Fragment() {
     ): View? {
         mapViewModel =
                 ViewModelProvider(this).get(MapViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_dashboard, container, false)
-        val textView: TextView = root.findViewById(R.id.text_dashboard)
+        val root = inflater.inflate(R.layout.fragment_map, container, false)
+        val textView: TextView = root.findViewById(R.id.text_map)
         mapViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })

@@ -1,4 +1,4 @@
-package com.example.guatepreviene.ui.dashboard
+package com.example.guatepreviene.ui.map
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
