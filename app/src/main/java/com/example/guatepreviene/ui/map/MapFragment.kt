@@ -1,4 +1,4 @@
-package com.example.guatepreviene.ui.dashboard
+package com.example.guatepreviene.ui.map
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,8 +9,9 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.guatepreviene.R
+import com.example.guatepreviene.ui.dashboard.MapViewModel
 
-class DashboardFragment : Fragment() {
+class MapFragment : Fragment() {
 
     private lateinit var mapViewModel: MapViewModel
 

@@ -12,6 +12,11 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
+        android:id="@+id/navigation_home2"
+        android:name="com.example.guatepreviene.ui.map.MapFragment"
+        android:label="@string/title_map"
+        tools:layout="@layout/fragment_map" />
+    <fragment
         android:id="@+id/navigation_dashboard"
         android:name="com.example.guatepreviene.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
